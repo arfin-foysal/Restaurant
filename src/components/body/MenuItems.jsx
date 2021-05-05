@@ -2,14 +2,15 @@ import React from 'react'
 import { Card, CardImg,CardBody,CardTitle,CardImgOverlay } from'reactstrap';
 
 export default function MenuItems(props) {
-    console.log(props);
+   
     return (
-        <div className="">
-            <Card className="mt-5 text-light" >
+        <div >
+            <Card className=" text-light " >
             <CardBody>
-                <CardImg With="80%" height="30%" alt={props.Dishes.name} src={props.Dishes.image}  />
-                <CardImgOverlay>
-                    <CardTitle>
+            <CardImg With="100%"  alt={props.Dishes.name} src={props.Dishes.image}  />
+                <CardImgOverlay >
+                    <CardTitle style={{cursor:'pointer'}} onClick ={props.DishSelect}>
+                   
                         {props.Dishes.name}
                     </CardTitle>
                     </CardImgOverlay>
