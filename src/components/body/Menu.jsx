@@ -7,7 +7,7 @@ export default class Menu extends Component {
         Dishes: DISHES
     }
     render() {
-        const Menu=this.state.Dishes.map((item)=>{
+        const Menu =this.state.Dishes.map((item)=>{
             return <MenuItem Dishes={item} key ={item.id}/>
         })
         return (
