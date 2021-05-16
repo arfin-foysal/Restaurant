@@ -17,7 +17,7 @@ export default function DishDetail(props) {
                            
                        </CardText>
                       <hr/>
-                       <LoadComments comments={props.dish.Comments}/>
+                       <LoadComments comments={props.comments}/>
                         </CardBody>
             </Card>
         </div>
